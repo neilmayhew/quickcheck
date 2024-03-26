@@ -9,7 +9,7 @@ mkDerivation {
     base containers deepseq random splitmix template-haskell
     transformers
   ];
-  testHaskellDepends = [ base deepseq process ];
+  testHaskellDepends = [ base containers deepseq process ];
   homepage = "https://github.com/nick8325/quickcheck";
   description = "Automatic testing of Haskell programs";
   license = lib.licenses.bsd3;
